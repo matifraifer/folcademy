@@ -1,0 +1,373 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat';
+    scroll-behavior: smooth;
+}
+
+/* 
+COLOR 1: 26798E 
+COLOR 2: FFC172
+*/
+.buttonNav{
+    color: white;
+    text-decoration: none;
+    margin-left: 5px;
+    background-color: #FFC172;
+    padding: 8px;
+    border-radius: 5px;
+}
+.cHeader{
+    position: fixed;
+    background-color: #26798e;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+.cNav{
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+.headerList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Comienzo del body */
+.hero{
+    background-image: url(multimedia/heroimg.jpeg);
+    background-size: cover;
+    background-position: bottom;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heroBienvenida{
+    background-color: rgba(0, 0, 0, 0.267);
+    width: 80vw;
+    height: 60vh;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;   
+}
+.bienvenida{
+    margin-top: 20px;
+    padding: 20px;
+}
+.services{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.h2Services{
+color: rgb(78, 78, 78);
+padding-top: 100px;
+}
+.contenedorCards{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.card{
+    background-color: #26798e;
+    width: 16em;
+    height: 21em;
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px rgb(175, 175, 175);
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: space-around;
+    color: white;
+}
+.cardIn{
+    background-color: #b9c7ca;
+    border-radius: 20px;
+    width: 80%;
+    height: 50%;
+}
+.buttonInicio{
+    position: fixed;
+	bottom: 40px;
+	right: 40px;
+    background-color: #26798e;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 50px;
+    margin-right: 20px;
+
+}
+table{
+    width: 100%;
+}
+tr{
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+    margin-top: 50px;
+}
+#tienda{
+    margin-top: 20px;
+}
+.tableTienda{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 1s;
+}
+.celdasTienda{
+    width: 20em;
+    box-shadow: 5px 10px 10px rgb(175, 175, 175);
+    border-radius: 20px;
+    transition: .3s;
+}
+.contenedorTituloProducto{
+    background-color: #26798e;
+    color: white;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    border-radius: 0px 0px 10px 10px ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.celdasTienda:hover .contenedorTituloProducto{
+    background-color: #FFC172;
+}
+
+.logoCarro{
+    width: 30px; 
+    height: 35px;
+    margin-right: 20px;
+}
+.tituloProducto{
+    margin-left: 10px;
+}
+.prueba2{
+    position: relative;
+    transition: 1s;
+}
+.gradiente{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    transition-duration: 1s;
+}
+.celdasTienda:hover .gradiente{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.63) 0%, rgba(0,212,255,0) 50%);
+}
+.imagenProducto{
+    width: 20em;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    align-self: center; 
+    align-content: center;
+}
+.sectionUbicacion{
+    display: flex;
+    flex-direction: row;  
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 10em;
+    margin-bottom: 10em;
+    font-weight: bolder;
+}
+.contenedorMap{
+    border-radius: 30px 0px 0px 30px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 90%;
+    box-shadow: 0px 0px 25px 5px rgb(216, 216, 216);
+}
+.maps{
+    box-shadow: 0px 0px 25px 5px rgb(216, 216, 216);
+    border-radius: 30px 0px 0px 30px;
+    width: 80%;
+    border: none;
+}
+.textUbicacion{
+    margin-left: 3em;
+    width: 10%;
+    font-size: xx-large;
+}
+.contactoSection{
+    height: 100vh;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 60px 60px 0px 0px;
+    box-shadow: 0px 30px 60px 15px rgb(175, 175, 175);
+}
+form{
+    margin-top: 5em;
+    height: 50vh;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 25px 5px rgb(216, 216, 216);
+    border-radius: 20px;
+
+}
+fieldset{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 50%;
+    border: none;
+}
+.pContacto{
+    color: #26798e;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+.contenedorDatosContacto{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    margin-right: 1em;
+}
+.contenedorConsultaContacto{
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    margin-left: 1em;
+}
+.buttonConsulta{
+    border-radius: 20px;
+    background-color: rgb(30, 202, 0);
+    border: none;
+    padding: 1em 2em;
+    color: white;
+    font-size:large;
+    font-weight: bolder;
+}
+.cFooter{
+    background-color:#26798e;
+    height: 30vh;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 30px;
+}
+.footerNav{
+    border-left: white solid 1px;
+    padding-left:1em ;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footerButtonNav{
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.footerButtonNav:hover{
+    color: #FFC172;
+}
+.imgFooter{
+    margin-right: 10px;
+}
+.pFooter{
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+.footerList{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 7em;
+}
+
+@media screen and (max-width:600px) {
+    .cHeader{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .services{
+        align-items: center;
+        margin: 0px;
+    }
+    .contenedorCards{
+        align-items: center;
+        flex-direction: column;
+    }
+    .card{
+        margin-top: 5px;
+        margin-bottom: 5px;
+        height: 5em;
+        width: 80%;
+    }
+    .cardIn{
+        display: none;
+    }
+    tr{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0px;
+    }
+    .celdasTienda{
+        margin-top: 10em;
+        width: 80vw;
+        align-items: center;
+        justify-content: center;
+    }
+    .prueba2{
+        justify-content: center;
+        align-items: center;
+    }
+    #tienda{
+        margin-top: 0px ;
+    }
+    .sectionUbicacion{
+        align-items: center;
+        justify-content: center;
+    }
+    .contenedorMap{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 50px;
+        height: 55vh;
+    }
+    .textUbicacion{
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 50px;
+    }
+    .maps{
+        border-radius: 50px;
+        width: 100%;
+    }
+}
